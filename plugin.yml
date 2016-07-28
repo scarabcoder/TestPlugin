@@ -1,0 +1,17 @@
+main: com.scarabcoder.testplugin.Main
+name: TestPlugin
+version: 1.0
+commands:
+    donor:
+        description: Open GUI
+    mutechat:
+        description: Mutes chat
+    teamspeak:
+        description: Displays Teamspeak info
+        aliases: [ts]
+    website:
+        description: Displays website URL
+    twitter:
+        description: Displays Twitter URL
+    vanish:
+        description: Admin vanish mode
