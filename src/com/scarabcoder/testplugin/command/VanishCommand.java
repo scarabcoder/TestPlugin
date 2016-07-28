@@ -1,5 +1,6 @@
 package com.scarabcoder.testplugin.command;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -12,8 +13,6 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 import com.scarabcoder.testplugin.Main;
-
-import net.md_5.bungee.api.ChatColor;
 
 public class VanishCommand implements CommandExecutor {
 

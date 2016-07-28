@@ -1,10 +1,9 @@
 package com.scarabcoder.testplugin.command;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-
-import net.md_5.bungee.api.ChatColor;
 
 public class InfoCommands implements CommandExecutor{
 

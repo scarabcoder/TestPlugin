@@ -1,12 +1,11 @@
 package com.scarabcoder.testplugin.listeners;
 
+import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 import com.scarabcoder.testplugin.Main;
-
-import net.md_5.bungee.api.ChatColor;
 
 public class PlayerJoinListener implements Listener {
 	@EventHandler

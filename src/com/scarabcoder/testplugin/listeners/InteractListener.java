@@ -1,10 +1,12 @@
 package com.scarabcoder.testplugin.listeners;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -12,8 +14,6 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 import com.scarabcoder.testplugin.command.VanishCommand;
-
-import net.md_5.bungee.api.ChatColor;
 
 public class InteractListener implements Listener{
 	
@@ -24,7 +24,7 @@ public class InteractListener implements Listener{
 				if(e.getItem().getItemMeta() != null){
 					if(e.getItem().getItemMeta().getDisplayName() != null){
 						if(e.getItem().getItemMeta().getDisplayName().equals(ChatColor.RESET.toString() + ChatColor.BOLD + "Teleport to random player")){
-							List<Player> players = new ArrayList<Player>(Bukkit.getOnlinePlayers());
+							List<Player> players = new ArrayList<Player>(Arrays.asList(Bukkit.getServer().getOnlinePlayers()));
 							players.remove(e.getPlayer());
 							e.getPlayer().teleport(players.get(new Random().nextInt(players.size())));
 						}else if(e.getItem().getItemMeta().getDisplayName().equals(ChatColor.RESET.toString() + ChatColor.BOLD + "Ban Player")){
